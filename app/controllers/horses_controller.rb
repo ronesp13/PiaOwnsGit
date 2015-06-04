@@ -4,7 +4,7 @@ class HorsesController < ApplicationController
   # GET /horses
   # GET /horses.json
   def index
-    @horses = Horse.all
+    @horses = Horse.all.order('created_at ASC')
   end
 
   # GET /horses/1
